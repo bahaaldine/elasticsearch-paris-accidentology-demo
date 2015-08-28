@@ -1,0 +1,91 @@
+ldap1:
+  image: bahaaldine/docker-ldap
+  volumes:
+    - "conf/ldap:/tmp/files"
+  ports:
+    - "389:389"
+
+zookeeper1:
+  image: bahaaldine/docker-zookeeper
+  volumes:
+    - "conf/kafka/server1:/etc/kafka"
+    - "logs/zookeeper1:/opt/kafka/logs/"
+  ports:
+    - "2181:2181"
+  extra_hosts:
+    - "brokers:192.168.59.103"
+
+kafka1:
+  image: bahaaldine/docker-kafka
+  volumes:
+    - "conf/kafka/server1:/etc/kafka"
+    - "logs/kafka1:/opt/kafka/logs/"
+  extra_hosts:
+    - "brokers:192.168.59.103"
+  ports:
+    - "9092:9092"
+
+kafka2:
+  image: bahaaldine/docker-kafka
+  volumes:
+    - "conf/kafka/server2:/etc/kafka"
+    - "logs/kafka2:/opt/kafka/logs/"
+  extra_hosts:
+    - "brokers:192.168.59.103"
+  links:
+    - "kafka1"
+  ports:
+    - "9093:9093"
+
+logstashProcessor1:
+  image: bahaaldine/docker-logstash-agent
+  volumes:
+    - "conf/logstash/processor:/etc/logstash"
+    - "conf/security:/etc/logstash/security"
+    - "logs/logstash-processor1:/var/log/logstash"
+  links:
+    - kafka1
+  ports:
+    - "5043:5043"
+
+elasticsearch1:
+  image: bahaaldine/docker-elasticsearch
+  ports:
+    - "9200:9200"
+  volumes:
+    - "logs/elasticsearch1:/var/log/elasticsearch"
+    - "conf/elasticsearch:/etc/elasticsearch"
+  links:
+    - ldap1:ldap
+  extra_hosts:
+    - "elasticsearch:192.168.59.103"
+    - "ldap:192.168.59.103"
+logstashIndexer1:
+  image: bahaaldine/docker-logstash-agent
+  volumes:
+    - "conf/logstash/indexer:/etc/logstash"
+    - "logs/logstash-indexer1:/var/log/logstash"
+  links:
+    - elasticsearch1
+  extra_hosts:
+    - "brokers:192.168.59.103"
+    - "elasticsearch:192.168.59.103"
+
+logstashForwarder:
+  image: bahaaldine/docker-logstash-forwarder
+  volumes:
+    - "conf/logstash/forwarder:/etc/logstash-forwarder"
+    - "conf/security:/etc/logstash-forwarder/security"
+    - "logs/logstash-forwarder1:/tmp/logs/"
+    - "source:/tmp/source"
+  extra_hosts:
+    - "processors:192.168.59.103"
+kibana1:
+  image: bahaaldine/docker-kibana
+  ports:
+    - "5601:5601"
+  volumes:
+    - "logs/kibana:/var/log/kibana"
+    - "conf/kibana:/opt/kibana/config"
+  extra_hosts:
+    - "elasticsearch:192.168.59.103"
