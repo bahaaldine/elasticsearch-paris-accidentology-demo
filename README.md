@@ -1,5 +1,5 @@
 # elasticsearch-paris-accidentology-demo
-===================================
+============================================
 ## Introduction ##
 
 This Docker Compose project is an application which intends to demonstrate
