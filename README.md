@@ -19,7 +19,7 @@ This application is a ES based logging architecture that combines:
 This application also showcases Elasticsearch commercial plugin:
 - Marvel is installed and let you follow the activity of the ES cluster
 - Shield is included and secure the overall ES cluster: you need 
-to refer to the below LDAP section to understand which user should be used in order
+to refer to the below [LDAP](https://github.com/bahaaldine/elasticsearch-paris-accidentology-demo/blob/master/README.md#ldap-users-and-groups) section to understand which user should be used in order
 to interact with the cluster.
 - Watcher is installed but no watch are included.
 
