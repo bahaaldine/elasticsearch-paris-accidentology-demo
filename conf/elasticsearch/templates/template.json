@@ -24,7 +24,8 @@
                 "enabled": true
               },
               "properties": {
-                "location": { "type": "geo_point" }
+                "location": { "type": "geo_point" },
+                "involvedCount": { "type": "double" }
               }        
             }
         }
