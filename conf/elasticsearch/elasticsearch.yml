@@ -29,7 +29,7 @@
 # Cluster name identifies your cluster for auto-discovery. If you're running
 # multiple clusters on the same network, make sure you're using unique names.
 #
-#cluster.name: elasticsearch
+cluster.name: logging
 
 
 #################################### Node #####################################
@@ -104,11 +104,11 @@
 
 # Set the number of shards (splits) of an index (5 by default):
 #
-#index.number_of_shards: 5
+index.number_of_shards: 1
 
 # Set the number of replicas (additional copies) of an index (1 by default):
 #
-#index.number_of_replicas: 1
+index.number_of_replicas: 0
 
 # Note, that for development on a local machine, with small indices, it usually
 # makes sense to "disable" the distributed features:
@@ -146,7 +146,7 @@
 
 # Path to directory where to store index data allocated for this node.
 #
-#path.data: /path/to/data
+path.data: /data
 #
 # Can optionally include more than one location, causing data to be striped across
 # the locations (a la RAID 0) on a file level, favouring locations with most free
