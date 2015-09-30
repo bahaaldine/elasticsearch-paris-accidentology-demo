@@ -76,3 +76,13 @@ The LDAP admin user has the following credentials:
 DN: cn=admin,dc=elastic,dc=co
 user : admin
 password:  password
+
+## Installing the Workbook
+
+The workbook will help you to demo search feature based on the accidentology dataset
+
+```bash
+bin/plugin --install bahaaldine/elastic-workbook
+```
+
+
