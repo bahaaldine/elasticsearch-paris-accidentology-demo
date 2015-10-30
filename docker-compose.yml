@@ -37,8 +37,8 @@ kafka2:
   ports:
     - "9093:9093"
 
-logstashProcessor1:
-  image: bahaaldine/docker-logstash-agent
+logstashprocessor1:
+  build: images/logstash
   volumes:
     - "./conf/logstash/processor:/etc/logstash"
     - "./conf/security:/etc/logstash/security"
@@ -49,20 +49,21 @@ logstashProcessor1:
     - "5043:5043"
 
 elasticsearch1:
-  image: bahaaldine/docker-elasticsearch
+  build: images/elasticsearch/
   ports:
     - "9200:9200"
   volumes:
     - "./logs/elasticsearch1:/var/log/elasticsearch"
     - "./conf/elasticsearch:/etc/elasticsearch"
     - "./data:/data"
+    - "./backup:/tmp/backup"
   links:
     - ldap1:ldap
   extra_hosts:
     - "elasticsearch:192.168.99.100"
     - "ldap:192.168.99.100"
-logstashIndexer1:
-  image: bahaaldine/docker-logstash-agent
+logstashindexer1:
+  build: images/logstash
   volumes:
     - "./conf/logstash/indexer:/etc/logstash"
     - "./logs/logstash-indexer1:/var/log/logstash"
@@ -72,8 +73,8 @@ logstashIndexer1:
     - "brokers:192.168.99.100"
     - "elasticsearch:192.168.99.100"
 
-logstashForwarder:
-  image: bahaaldine/docker-logstash-forwarder
+logstashforwarder:
+  build: images/forwarder
   volumes:
     - "./conf/logstash/forwarder:/etc/logstash-forwarder"
     - "./conf/security:/etc/logstash-forwarder/security"
@@ -82,7 +83,7 @@ logstashForwarder:
   extra_hosts:
     - "processors:192.168.99.100"
 kibana1:
-  image: bahaaldine/docker-kibana
+  build: images/kibana
   ports:
     - "5601:5601"
   volumes:

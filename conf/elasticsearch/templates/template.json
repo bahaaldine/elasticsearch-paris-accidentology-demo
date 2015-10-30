@@ -25,7 +25,14 @@
               },
               "properties": {
                 "location": { "type": "geo_point" },
-                "involvedCount": { "type": "double" }
+                "involvedCount": { "type": "double" },
+                "Address1": {
+                  "type" : "multi_field",
+                  "fields" : {
+                      "Address1" : {"type" : "string", "index" : "not_analyzed"},
+                      "untouched" : {"type" : "string", "index" : "analyzed"}
+                  }
+                }
               }        
             }
         }

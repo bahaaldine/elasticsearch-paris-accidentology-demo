@@ -24,12 +24,43 @@ to interact with the cluster.
 
 ## Running the application ##
 
-Use Docker Compose in the project root folder to launch the application: 
+Use Docker Compose in the project root folder to build the application: 
 
 ```bash
-docker-compose up
+docker-compose build
 
 ```
+
+then run:
+
+```bash
+docker-compose run
+
+```
+
+## Kibana dashboards ##
+
+The dashboard are saved in the https://github.com/bahaaldine/elasticsearch-paris-accidentology-demo/blob/master/dashboards/export.json
+
+Import them in the settings tab on the Kibana application.
+
+Authentication is required and provided by the user contained in the LDAP (description below)
+
+## Workbook ##
+
+The workbook is accessible in the following URL
+
+http://DOCKER_MACHINE_IP:9200/_plugin/elastic-workbook
+
+To get your docker machine IP address, issue the following command line:
+
+```bash
+docker-machine ip default
+
+```
+Where *default* is my docker machine name.
+
+Authentication is required and provided by the user contained in the LDAP (description below)
 
 ## LDAP Users and Groups ##
 
