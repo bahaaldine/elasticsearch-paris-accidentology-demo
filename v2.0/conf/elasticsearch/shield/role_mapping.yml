@@ -1,0 +1,46 @@
+# Role mapping configuration file which has elasticsearch roles as keys
+# that map to one or more user or group distinguished names
+
+#roleA:   this is an elasticsearch role
+#  - groupA-DN  this is a group distinguished name
+#  - groupB-DN
+#  - user1-DN   this is the full user distinguished name
+
+#power_user:
+#  - "cn=admins,dc=example,dc=com"
+#user:
+#  - "cn=users,dc=example,dc=com"
+#  - "cn=admins,dc=example,dc=com"
+#  - "cn=John Doe,cn=other users,dc=example,dc=com"
+
+admin:
+  cluster: all
+  indices:
+    '*': all
+
+admin:
+  - "cn=bahaaldine,ou=Users,dc=elastic,dc=co"
+  - "cn=morgan,ou=Users,dc=elastic,dc=co"
+  - "cn=steve,ou=Users,dc=elastic,dc=co"
+  - "cn=dimitri,ou=Users,dc=elastic,dc=co"
+  - "cn=antoine,ou=Watchers,dc=elastic,dc=co"
+  - "cn=matias,ou=Watchers,dc=elastic,dc=co"
+
+marvel_user:
+  - "cn=alan,ou=Marvels,dc=elastic,dc=co"
+  - "cn=christoph,ou=Marvels,dc=elastic,dc=co"
+  - "cn=david,ou=Marvels,dc=elastic,dc=co"
+  - "cn=antoine,ou=Watchers,dc=elastic,dc=co"
+
+marvel_agent:
+  - "cn=agent,ou=Marvels,dc=elastic,dc=co"
+
+watcher_admin:
+  - "cn=antoine,ou=Watchers,dc=elastic,dc=co"
+
+kibana4_server:
+  - "cn=server,ou=Kibanas,dc=elastic,dc=co"
+
+kibana4:
+  - "cn=peter,ou=Kibanas,dc=elastic,dc=co"
+  - "cn=jeremy,ou=Kibanas,dc=elastic,dc=co"

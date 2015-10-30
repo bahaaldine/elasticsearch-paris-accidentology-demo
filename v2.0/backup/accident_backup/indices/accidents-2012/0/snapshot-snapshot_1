@@ -1,0 +1,35 @@
+{
+  "name" : "snapshot_1",
+  "index_version" : 9,
+  "start_time" : 1441630731036,
+  "time" : 407,
+  "number_of_files" : 4,
+  "total_size" : 6825184,
+  "files" : [ {
+    "name" : "__0",
+    "physical_name" : "segments_9",
+    "length" : 128,
+    "checksum" : "ysqqyi",
+    "written_by" : "4.10.4",
+    "meta_hash" : "P9dsFwhzZWdtZW50cwAAAAMAAAAAAAAAAwAAAAEAAAABAl8wCUx1Y2VuZTQxMP//////////AAAAAP////////////////////8AAAAAAAAAAAAAAAELdHJhbnNsb2dfaWQNMTQ0MTE4NTA5NjU2McAok+gAAAAAAAAAAH1qbvo="
+  }, {
+    "name" : "__1",
+    "physical_name" : "_0.cfe",
+    "length" : 350,
+    "checksum" : "fzegn",
+    "written_by" : "4.10.4"
+  }, {
+    "name" : "__2",
+    "physical_name" : "_0.si",
+    "length" : 257,
+    "checksum" : "1axl5ak",
+    "written_by" : "4.10.4",
+    "meta_hash" : "P9dsFxNMdWNlbmU0NlNlZ21lbnRJbmZvAAAAAQY0LjEwLjQAAB9hAQAAAAgCb3MFTGludXgLamF2YS52ZW5kb3IST3JhY2xlIENvcnBvcmF0aW9uDGphdmEudmVyc2lvbhExLjguMF80NS1pbnRlcm5hbA5sdWNlbmUudmVyc2lvbgY0LjEwLjQHb3MuYXJjaAVhbWQ2NAZzb3VyY2UFZmx1c2gKb3MudmVyc2lvbhE0LjAuOS1ib290MmRvY2tlcgl0aW1lc3RhbXANMTQ0MTE4NTI3MzY0NAAAAAMGXzAuY2ZlBV8wLnNpBl8wLmNmc8Aok+gAAAAAAAAAAKkmRww="
+  }, {
+    "name" : "__3",
+    "physical_name" : "_0.cfs",
+    "length" : 6824449,
+    "checksum" : "1urjcqf",
+    "written_by" : "4.10.4"
+  } ]
+}

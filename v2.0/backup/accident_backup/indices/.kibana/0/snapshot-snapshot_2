@@ -1,0 +1,104 @@
+{
+  "name" : "snapshot_2",
+  "index_version" : 36,
+  "start_time" : 1443109460081,
+  "time" : 606,
+  "number_of_files" : 15,
+  "total_size" : 42966,
+  "files" : [ {
+    "name" : "__0",
+    "physical_name" : "_m_1.del",
+    "length" : 48,
+    "checksum" : "zz31zl",
+    "written_by" : "4.10.4"
+  }, {
+    "name" : "__1",
+    "physical_name" : "_m.cfs",
+    "length" : 18697,
+    "checksum" : "zincai",
+    "written_by" : "4.10.4"
+  }, {
+    "name" : "__2",
+    "physical_name" : "_2.si",
+    "length" : 257,
+    "checksum" : "1sf5fo9",
+    "written_by" : "4.10.4",
+    "meta_hash" : "P9dsFxNMdWNlbmU0NlNlZ21lbnRJbmZvAAAAAQY0LjEwLjQAAAACAQAAAAgCb3MFTGludXgLamF2YS52ZW5kb3IST3JhY2xlIENvcnBvcmF0aW9uDGphdmEudmVyc2lvbhExLjguMF80NS1pbnRlcm5hbA5sdWNlbmUudmVyc2lvbgY0LjEwLjQHb3MuYXJjaAVhbWQ2NAZzb3VyY2UFZmx1c2gKb3MudmVyc2lvbhE0LjAuOS1ib290MmRvY2tlcgl0aW1lc3RhbXANMTQ0MTE4NTE1MTM0NQAAAAMFXzIuc2kGXzIuY2ZlBl8yLmNmc8Aok+gAAAAAAAAAAOgtTZk="
+  }, {
+    "name" : "__3",
+    "physical_name" : "_2.cfs",
+    "length" : 5816,
+    "checksum" : "1nx0i5g",
+    "written_by" : "4.10.4"
+  }, {
+    "name" : "__4",
+    "physical_name" : "_r.cfs",
+    "length" : 9368,
+    "checksum" : "1aw2kdc",
+    "written_by" : "4.10.4"
+  }, {
+    "name" : "__5",
+    "physical_name" : "_s.cfe",
+    "length" : 350,
+    "checksum" : "1fpc6bp",
+    "written_by" : "4.10.4"
+  }, {
+    "name" : "__6",
+    "physical_name" : "_m.cfe",
+    "length" : 350,
+    "checksum" : "7boy71",
+    "written_by" : "4.10.4"
+  }, {
+    "name" : "__7",
+    "physical_name" : "_s.cfs",
+    "length" : 6287,
+    "checksum" : "1tikwlo",
+    "written_by" : "4.10.4"
+  }, {
+    "name" : "__8",
+    "physical_name" : "_2.cfe",
+    "length" : 350,
+    "checksum" : "18bipxm",
+    "written_by" : "4.10.4"
+  }, {
+    "name" : "__9",
+    "physical_name" : "_r_1.del",
+    "length" : 47,
+    "checksum" : "1kbviy3",
+    "written_by" : "4.10.4"
+  }, {
+    "name" : "__a",
+    "physical_name" : "_m.si",
+    "length" : 257,
+    "checksum" : "1db8avq",
+    "written_by" : "4.10.4",
+    "meta_hash" : "P9dsFxNMdWNlbmU0NlNlZ21lbnRJbmZvAAAAAQY0LjEwLjQAAAAPAQAAAAgCb3MFTGludXgLamF2YS52ZW5kb3IST3JhY2xlIENvcnBvcmF0aW9uDGphdmEudmVyc2lvbhExLjguMF80NS1pbnRlcm5hbA5sdWNlbmUudmVyc2lvbgY0LjEwLjQHb3MuYXJjaAVhbWQ2NAZzb3VyY2UFZmx1c2gKb3MudmVyc2lvbhE0LjAuOS1ib290MmRvY2tlcgl0aW1lc3RhbXANMTQ0MTI3MjA2ODUyMQAAAAMGX20uY2ZlBl9tLmNmcwVfbS5zacAok+gAAAAAAAAAALG5OBY="
+  }, {
+    "name" : "__b",
+    "physical_name" : "_r.cfe",
+    "length" : 350,
+    "checksum" : "1elhd8d",
+    "written_by" : "4.10.4"
+  }, {
+    "name" : "__c",
+    "physical_name" : "_r.si",
+    "length" : 257,
+    "checksum" : "uk9gml",
+    "written_by" : "4.10.4",
+    "meta_hash" : "P9dsFxNMdWNlbmU0NlNlZ21lbnRJbmZvAAAAAQY0LjEwLjQAAAACAQAAAAgCb3MFTGludXgLamF2YS52ZW5kb3IST3JhY2xlIENvcnBvcmF0aW9uDGphdmEudmVyc2lvbhExLjguMF80NS1pbnRlcm5hbA5sdWNlbmUudmVyc2lvbgY0LjEwLjQHb3MuYXJjaAVhbWQ2NAZzb3VyY2UFZmx1c2gKb3MudmVyc2lvbhE0LjAuOS1ib290MmRvY2tlcgl0aW1lc3RhbXANMTQ0MjQ3Njc2MTkyNwAAAAMGX3IuY2ZzBl9yLmNmZQVfci5zacAok+gAAAAAAAAAAG4miG0="
+  }, {
+    "name" : "__d",
+    "physical_name" : "segments_10",
+    "length" : 275,
+    "checksum" : "dcnnbd",
+    "written_by" : "4.10.4",
+    "meta_hash" : "P9dsFwhzZWdtZW50cwAAAAMAAAAAAAAAWgAAAB0AAAAEAl8yCUx1Y2VuZTQxMP//////////AAAAAP////////////////////8AAAAAAAAAAAJfbQlMdWNlbmU0MTAAAAAAAAAAAQAAAAH/////////////////////AAAAAAAAAAACX3IJTHVjZW5lNDEwAAAAAAAAAAEAAAAB/////////////////////wAAAAAAAAAAAl9zCUx1Y2VuZTQxMP//////////AAAAAP////////////////////8AAAAAAAAAAAAAAAELdHJhbnNsb2dfaWQNMTQ0MTE4NTE0MDc2N8Aok+gAAAAAAAAAADAetck="
+  }, {
+    "name" : "__e",
+    "physical_name" : "_s.si",
+    "length" : 257,
+    "checksum" : "1d7x0a5",
+    "written_by" : "4.10.4",
+    "meta_hash" : "P9dsFxNMdWNlbmU0NlNlZ21lbnRJbmZvAAAAAQY0LjEwLjQAAAABAQAAAAgCb3MFTGludXgLamF2YS52ZW5kb3IST3JhY2xlIENvcnBvcmF0aW9uDGphdmEudmVyc2lvbhExLjguMF80NS1pbnRlcm5hbA5sdWNlbmUudmVyc2lvbgY0LjEwLjQHb3MuYXJjaAVhbWQ2NAZzb3VyY2UFZmx1c2gKb3MudmVyc2lvbhE0LjAuOS1ib290MmRvY2tlcgl0aW1lc3RhbXANMTQ0MjQ3Njg3MzY2NwAAAAMGX3MuY2ZzBl9zLmNmZQVfcy5zacAok+gAAAAAAAAAALFkSq0="
+  } ]
+}
