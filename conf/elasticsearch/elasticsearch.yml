@@ -424,7 +424,7 @@ marvel:
       es:
         hosts: [ "http://agent:amarvel@localhost:9200" ]
 
-cloud:
-  aws:
-    access_key: AKIAJJYDY6NXEQLXSZRQ
-    secret_key: 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
+http.cors.enabled : true
+http.cors.allow-origin : "*"
+http.cors.allow-methods : OPTIONS, HEAD, GET, POST, PUT, DELETE
+http.cors.allow-headers : X-Requested-With,X-Auth-Token,Content-Type, Content-Length, Authorization
