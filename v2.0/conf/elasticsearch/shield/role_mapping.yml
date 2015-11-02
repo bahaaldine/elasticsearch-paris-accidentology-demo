@@ -14,11 +14,6 @@
 #  - "cn=John Doe,cn=other users,dc=example,dc=com"
 
 admin:
-  cluster: all
-  indices:
-    '*': all
-
-admin:
   - "cn=bahaaldine,ou=Users,dc=elastic,dc=co"
   - "cn=morgan,ou=Users,dc=elastic,dc=co"
   - "cn=steve,ou=Users,dc=elastic,dc=co"

@@ -53,9 +53,9 @@ elasticsearch1:
   ports:
     - "9200:9200"
   volumes:
-    - "./logs/elasticsearch1:/var/log/elasticsearch"
-    - "./conf/elasticsearch:/etc/elasticsearch"
-    - "./data:/data"
+#    - "./logs/elasticsearch1:/usr/share/elasticsearch/logs/"
+    - "./conf/elasticsearch:/usr/share/elasticsearch/config"
+#    - "./data:/usr/share/elasticsearch/data/"
     - "./backup:/tmp/backup"
   links:
     - ldap1:ldap
@@ -67,6 +67,7 @@ logstashindexer1:
   volumes:
     - "./conf/logstash/indexer:/etc/logstash"
     - "./logs/logstash-indexer1:/var/log/logstash"
+    - "./conf/logstash/indexer/templates:/etc/logstash/templates"
   links:
     - elasticsearch1
   extra_hosts:
